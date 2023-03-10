@@ -52,7 +52,7 @@ app.post("/",function(req,res){
             res.sendFile(__dirname+"/success.html");
         }
         else{
-            res.sendFile(__dirname+".html");
+            res.sendFile(__dirname+"/failure.html");
         }
         response.on("data",function(data){
             console.log(JSON.parse(data));
@@ -72,5 +72,3 @@ app.listen(3000,function(){
     console.log("Server started on port 3000.");
 })
 
-//api key d59c178c48c150e934cee7e3e7fff652-us21
-//list/audience id 3ac765e6e8.
